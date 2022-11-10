@@ -13,12 +13,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run lint
-        run: npm lint
+        run: npm run lint
       - name: Run test
-        run: npm test
+        run: npm run test
   Build: 
     needs: test_lint
     runs-on: ubuntu-latest
     steps:
       - name: Run build
-        run: npm build
+        run: npm run build
